@@ -7,6 +7,10 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     /usr/local/cuda/bin/nvcc  --version
     echo "nvcc --version"
     nvcc --version
+    python3 /opt/fashionmnist.py
+    
+%files
+    fashionmnist.py /opt
 
 %environment
     LD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
