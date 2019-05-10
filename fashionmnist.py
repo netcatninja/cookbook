@@ -67,4 +67,4 @@ print('Test accuracy:', test_acc)
 
 
 ## make predictions
-predictions = model.predict(test_images)
+## predictions = model.predict(test_images)
