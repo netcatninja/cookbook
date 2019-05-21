@@ -1,5 +1,5 @@
 BootStrap: debootstrap
-OSVersion: dingo
+OSVersion: disco
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %help
