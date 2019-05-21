@@ -6,14 +6,14 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     This is a simple container for testing support for Ubuntu 16.04.
 
 %runscript
-    cat /etc/lsb-release  | cowsay
+    cat /etc/lsb-release
     
 %environment
     export LANG=en_US.UTF-8
     export PATH=/usr/bin:/usr/local/sbin:/bin:/usr/local/bin:/usr/sbin:/sbin
 
 %post
-    apt-get -y update && apt-get install -y --no-install-recommends cowsay
+    apt-get -y update && apt-get install -y --no-install-recommends golang perl python
 
 %labels
     Author Brie Carranza
